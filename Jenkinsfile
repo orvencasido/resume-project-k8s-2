@@ -1,5 +1,10 @@
 pipeline {
-    agent { label 'docker-agent' }
+    kubernetes {
+        agent {
+            label 'docker-agent'
+            defaultContainer 'docker'
+        }
+    }
 
     environment {
         DOCKER_IMAGE = "orvencasido/resume-project-k8s"
