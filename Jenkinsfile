@@ -1,6 +1,6 @@
 pipeline {
-    kubernetes {
-        agent {
+    agents {
+        kubernetes {
             label 'docker-agent'
             defaultContainer 'docker'
         }
