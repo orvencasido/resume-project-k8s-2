@@ -2,7 +2,7 @@ pipeline {
     agent { label 'docker-agent' }
 
     environment {
-        DOCKER_IMAGE = "orvencasido/resume-project"
+        DOCKER_IMAGE = "orvencasido/resume-project-k8s"
         DOCKER_CONTAINER = "resume"
         VERSION = "${env.BUILD_NUMBER}"
     }
